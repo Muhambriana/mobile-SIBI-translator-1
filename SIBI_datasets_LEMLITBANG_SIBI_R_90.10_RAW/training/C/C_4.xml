@@ -1,0 +1,26 @@
+<annotation>
+	<folder>C</folder>
+	<filename>C_4.jpg</filename>
+	<path>/home/fulankun1412/TA/Training/Standard/001/C/C_4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2000</width>
+		<height>2000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>C</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>317</xmin>
+			<ymin>287</ymin>
+			<xmax>1639</xmax>
+			<ymax>1555</ymax>
+		</bndbox>
+	</object>
+</annotation>

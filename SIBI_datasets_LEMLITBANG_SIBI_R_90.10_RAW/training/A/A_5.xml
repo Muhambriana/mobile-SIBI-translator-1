@@ -1,0 +1,26 @@
+<annotation>
+	<folder>A</folder>
+	<filename>A_5.jpg</filename>
+	<path>/home/fulankun1412/TA/Training/Standard/001/A/A_5.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2000</width>
+		<height>2000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>A</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>486</xmin>
+			<ymin>259</ymin>
+			<xmax>1555</xmax>
+			<ymax>1568</ymax>
+		</bndbox>
+	</object>
+</annotation>
