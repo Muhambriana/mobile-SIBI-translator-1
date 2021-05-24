@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">MobileSibi</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="fragment_home">Home</string>
-    <string name="fragment_translate">Translate</string>
-    <string name="title">Title</string>
-    <string name="img_description">Image</string>
-</resources>
