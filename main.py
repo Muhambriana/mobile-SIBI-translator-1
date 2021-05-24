@@ -85,7 +85,13 @@ def translator():
 
         #Send Prediksi kembali ke Android berupa satu value yaitu text_prediction
         #text_prediction to Android
-
         #Kalau Apps android matiin koneksi, matiin Pythonnya
         if #code:
             break
+
+    #lihat output dari code untuk cek jalan bener atau enggak.
+
+    return(alphabets)
+
+
+app.run()
