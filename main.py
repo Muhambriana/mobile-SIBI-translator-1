@@ -49,26 +49,23 @@ def translator():
 
     #Define the Input for the Inference
     # Thumb Finger or Jari Jempol
-    thumb_fingerX = 0
-    thumb_fingerY = 0
+    thumb_fingerX = 387.35830783843994
+    thumb_fingerY = 854.7810316085815
     # Index Finger or Jari Telunjuk
-    index_fingerX = 0
-    index_fingerY = 0
+    index_fingerX = 924.9814748764038
+    index_fingerY = 324.4127631187439
     # Middle Finger or Jari Tengah
-    middle_fingerX = 0
-    middle_fingerY = 0
+    middle_fingerX = 1076.1100053787231
+    middle_fingerY = 1152.2197723388672
     # Ring Finger or Jari Manis
-    ring_fingerX = 0
-    ring_fingerY = 0
+    ring_fingerX = 1185.478687286377
+    ring_fingerY = 1216.181993484497
     # Pinky Finger or Jari Kelingking
-    pinky_fingerX = 0
-    pinky_fingerY = 0
+    pinky_fingerX = 1310.7153177261353
+    pinky_fingerY = 1211.7106914520264
 
     while True: #Selama Apps Android Terkoneksi dengan Cloud
         #Kalau ada Input dari Android
-        if #code:
-            thumb_fingerX, thumb_fingerY, index_fingerX, index_fingerY, middle_fingerX, middle_fingerY, ring_fingerX, ring_fingerY, pinky_fingerX, pinky_fingerY, output_IMG = #Input dari Android terdiri dari 10 Value
-
         #Convert into a Array for Prediction
         input_IMG = [[[thumb_fingerX], [thumb_fingerY],
                   [index_fingerX], [index_fingerY],
@@ -86,12 +83,9 @@ def translator():
         #Send Prediksi kembali ke Android berupa satu value yaitu text_prediction
         #text_prediction to Android
         #Kalau Apps android matiin koneksi, matiin Pythonnya
-        if #code:
-            break
-
     #lihat output dari code untuk cek jalan bener atau enggak.
 
-    return(alphabets)
+    return(text_prediction)
 
-
+if __name__ == "__main__"
 app.run()
