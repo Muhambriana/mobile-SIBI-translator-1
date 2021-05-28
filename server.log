@@ -1,0 +1,42 @@
+nohup: ignoring input
+2021-05-28 21:37:30.023483: I tensorflow_serving/model_servers/server.cc:89] Building single TensorFlow model file config:  model_name: model_sibi model_base_path: /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi
+2021-05-28 21:37:30.024182: I tensorflow_serving/model_servers/server_core.cc:465] Adding/updating models.
+2021-05-28 21:37:30.024583: I tensorflow_serving/model_servers/server_core.cc:591]  (Re-)adding model: model_sibi
+2021-05-28 21:37:30.270746: I tensorflow_serving/core/basic_manager.cc:740] Successfully reserved resources to load servable {name: model_sibi version: 1}
+2021-05-28 21:37:30.271032: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: model_sibi version: 1}
+2021-05-28 21:37:30.271334: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: model_sibi version: 1}
+2021-05-28 21:37:30.277831: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:38] Reading SavedModel from: /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi/1
+2021-05-28 21:37:30.289745: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:90] Reading meta graph with tags { serve }
+2021-05-28 21:37:30.290066: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:132] Reading SavedModel debug info (if present) from: /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi/1
+2021-05-28 21:37:30.292960: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-28 21:37:30.335997: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:206] Restoring SavedModel bundle.
+2021-05-28 21:37:30.343757: I external/org_tensorflow/tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2194915000 Hz
+2021-05-28 21:37:30.461034: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:190] Running initialization op on SavedModel bundle at path: /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi/1
+2021-05-28 21:37:30.472693: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:277] SavedModel load for tags { serve }; Status: success: OK. Took 194874 microseconds.
+2021-05-28 21:37:30.478397: I tensorflow_serving/servables/tensorflow/saved_model_warmup_util.cc:59] No warmup data file found at /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi/1/assets.extra/tf_serving_warmup_requests
+2021-05-28 21:37:30.629024: I tensorflow_serving/core/loader_harness.cc:87] Successfully loaded servable version {name: model_sibi version: 1}
+2021-05-28 21:37:30.631385: I tensorflow_serving/model_servers/server_core.cc:486] Finished adding/updating models
+2021-05-28 21:37:30.631851: I tensorflow_serving/model_servers/server.cc:367] Profiler service is enabled
+2021-05-28 21:37:30.634646: I tensorflow_serving/model_servers/server.cc:393] Running gRPC ModelServer at 0.0.0.0:8500 ...
+[evhttp_server.cc : 245] NET_LOG: Entering the event loop ...
+2021-05-28 21:37:30.637930: I tensorflow_serving/model_servers/server.cc:414] Exporting HTTP/REST API at:localhost:8501 ...
+2021-05-28 21:47:19.141297: W tensorflow_serving/sources/storage_path/file_system_storage_path_source.cc:268] No versions of servable model_sibi found under base path /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi. Did you forget to name your leaf directory as a number (eg. '/1/')?
+2021-05-28 21:47:19.188833: I tensorflow_serving/core/loader_harness.cc:138] Quiescing servable version {name: model_sibi version: 1}
+2021-05-28 21:47:19.189544: I tensorflow_serving/core/loader_harness.cc:145] Done quiescing servable version {name: model_sibi version: 1}
+2021-05-28 21:47:19.189943: I tensorflow_serving/core/loader_harness.cc:120] Unloading servable version {name: model_sibi version: 1}
+2021-05-28 21:47:19.197666: I ./tensorflow_serving/core/simple_loader.h:364] Calling MallocExtension_ReleaseToSystem() after servable unload with 1168681
+2021-05-28 21:47:19.198235: I tensorflow_serving/core/loader_harness.cc:128] Done unloading servable version {name: model_sibi version: 1}
+2021-05-28 21:47:20.228129: W tensorflow_serving/sources/storage_path/file_system_storage_path_source.cc:268] No versions of servable model_sibi found under base path /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi. Did you forget to name your leaf directory as a number (eg. '/1/')?
+2021-05-28 21:47:21.140078: W tensorflow_serving/sources/storage_path/file_system_storage_path_source.cc:268] No versions of servable model_sibi found under base path /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi. Did you forget to name your leaf directory as a number (eg. '/1/')?
+2021-05-28 21:47:22.532460: I tensorflow_serving/core/basic_manager.cc:740] Successfully reserved resources to load servable {name: model_sibi version: 1}
+2021-05-28 21:47:22.532823: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: model_sibi version: 1}
+2021-05-28 21:47:22.533164: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: model_sibi version: 1}
+2021-05-28 21:47:22.541791: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:38] Reading SavedModel from: /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi/1
+2021-05-28 21:47:22.561831: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:90] Reading meta graph with tags { serve }
+2021-05-28 21:47:22.562207: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:132] Reading SavedModel debug info (if present) from: /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi/1
+2021-05-28 21:47:22.587116: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:206] Restoring SavedModel bundle.
+2021-05-28 21:47:22.801187: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:190] Running initialization op on SavedModel bundle at path: /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi/1
+2021-05-28 21:47:22.822663: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:277] SavedModel load for tags { serve }; Status: success: OK. Took 280875 microseconds.
+2021-05-28 21:47:22.831586: I tensorflow_serving/servables/tensorflow/saved_model_warmup_util.cc:59] No warmup data file found at /mnt/c/capstone project/mobile-SIBI-translator/server_model_sibi/1/assets.extra/tf_serving_warmup_requests
+2021-05-28 21:47:23.040838: I tensorflow_serving/core/loader_harness.cc:87] Successfully loaded servable version {name: model_sibi version: 1}
