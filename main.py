@@ -1,4 +1,4 @@
-# Impoer the needed modules for prediction
+# Import the needed modules for prediction
 from flask import Flask, request
 import os
 import tensorflow as tf
@@ -51,7 +51,7 @@ for device in gpu_devices:
 # Define the Flask App
 app = Flask(__name__)
 
-### route from JSON android
+### route request Prediction from JSON android
 @app.route('/predict', methods=['POST'])
 def predict():
     #If there's an input from Android
@@ -79,6 +79,20 @@ def predict():
     }
 
     # Send Back the Prediction
+    return json.dumps(response_json)
+
+### route request PING from JSON android
+@app.route('/ping', methods=['POST'])
+def ping():
+    request_json = request.json
+    print("data: {}".format(request_json))
+    print("type: {}".format(type(request_json)))
+
+    response_json = {
+        "data" : request_json.get("data"),
+        "answer" : str("Server is Online")
+    }
+
     return json.dumps(response_json)
 
 if __name__ == "__main__":
