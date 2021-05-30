@@ -5,10 +5,19 @@ import tensorflow as tf
 import numpy as np
 import json
 
-# Check for GPU Support and set it to True
-gpu_devices = tf.config.experimental.list_physical_devices("GPU")
-for device in gpu_devices:
-    tf.config.experimental.set_memory_growth(device, True)
+# Set the GPU setting Support
+GPU_SETTING = False
+
+# If False then not using GPU and use CPU instead
+if GPU_SETTING != True:
+    os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+# If true then using GPU instead using CPU
+else:
+    # Check for list for GPU Support in server or computer and set it to True
+    gpu_devices = tf.config.experimental.list_physical_devices("GPU")
+    for device in gpu_devices:
+        tf.config.experimental.set_memory_growth(device, True)
+
 
 # Define Classes in Dictionary and Load Created Model Previously
 classes = {
@@ -42,11 +51,6 @@ classes = {
 # Load Model and show the Summary of the Model
 model = tf.keras.models.load_model('model_SIBI.h5')
 model.summary()
-
-# Check for GPU Support and set it to True
-gpu_devices = tf.config.experimental.list_physical_devices("GPU")
-for device in gpu_devices:
-    tf.config.experimental.set_memory_growth(device, True)
 
 # Define the Flask App
 app = Flask(__name__)
