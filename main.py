@@ -55,6 +55,12 @@ model.summary()
 # Define the Flask App
 app = Flask(__name__)
 
+### Hello world route to make sure the server running
+
+@app.route('/')
+def hello():
+    return 'Hello World!'
+
 ### route request Prediction from JSON android
 @app.route('/predict', methods=['POST'])
 def predict():
