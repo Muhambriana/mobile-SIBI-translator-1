@@ -20,7 +20,7 @@ print(data)
 headers = {"content-type": "application/json"}
 
 # Send Request to the Server for the Prediction
-json_response = requests.post('http://localhost:5000/predict', data=data, headers=headers)
+json_response = requests.post('http://34.101.121.113:80/predict', data=data, headers=headers)
 
 # Received the response and print the prediction
 prediction = json.loads(json_response.text)['prediction']
